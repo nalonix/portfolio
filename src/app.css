@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+	width: 100%;
+	max-width: 450px;
+}
+
+.primary-button {
+	display: block;
+	text-align: center;
+	width: 5rem;
+	border: solid black 3px;
+	text-decoration: none;
+	padding: 5px 10px;
+}
