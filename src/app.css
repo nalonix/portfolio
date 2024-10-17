@@ -5,18 +5,31 @@
 .primary-button {
 	@apply inline-flex items-center justify-center w-full text-center bg-black border border-black text-white rounded-full no-underline px-8 py-2 whitespace-nowrap transition-all duration-200;
 }
-.primary-button:hover {
+
+.primary-buttonbtn:hover {
 	@apply invert border border-zinc-600;
 }
 
-.seconary-button {
-	@apply block text-center bg-white text-black rounded-full border border-black no-underline px-8 py-2 whitespace-nowrap;
+.secondary-button {
+	@apply inline-flex items-center justify-center text-center bg-white border border-black text-black rounded-full no-underline px-8 py-2 whitespace-nowrap transition-all duration-200;
+}
+
+.secondary-button:hover {
+	@apply bg-black text-white;
+}
+
+.tertiary-button {
+	@apply inline-flex items-center justify-center text-center bg-transparent border border-transparent text-black rounded-full no-underline px-8 py-2 whitespace-nowrap transition-all duration-200;
+}
+
+.tertiary-button:hover {
+	@apply border-black bg-black text-white;
 }
 
 .card {
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	transition: all 0.3s ease-in-out;
-	@apply rounded-3xl;
+	@apply rounded-3xl h-fit;
 }
 
 .tag {
@@ -24,4 +37,32 @@
 }
 .tag.active {
 	@apply bg-zinc-800 border-zinc-900 text-white;
+}
+
+/* Markdown styling  */
+
+h1 {
+	@apply text-4xl;
+}
+
+h2 {
+	@apply text-2xl sm:text-3xl;
+}
+
+h3 {
+	@apply text-xl sm:text-2xl;
+}
+
+h4 {
+	@apply text-lg sm:text-xl;
+}
+
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6 {
+	@apply mb-1.5 mt-5;
 }

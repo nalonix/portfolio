@@ -4,7 +4,7 @@ export type Project = {
     title: string
     slug: string
     description: string
-    data: string
+    date: string
     tags: string[]
     published: boolean
 }
