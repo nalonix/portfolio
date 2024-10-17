@@ -3,8 +3,8 @@
 </script>
 
 
-<section class="bg-black text-white h-64">  
+<section class="bg-gradient-to-b from-gray-50/20 via-gray-300/90 to-gray-400/80 h-64">  
     <div class="max-w-7xl mx-auto py-9 px-2">
-        <p class="">For King + Country</p>
+        <p class="font-bold text-sm text-center">For King & Country</p>
     </div>
 </section>
