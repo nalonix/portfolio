@@ -4,8 +4,8 @@ title: Second Project
 description: Second post descripttion
 data: '2023-04-27'
 tags:
-  - next
-  - supabase
+  - NEXT
+  - SUPABASE
 published: true
 ---
 

@@ -4,8 +4,8 @@ title: First Project
 description: First post descripttion
 data: '2023-04-07'
 tags:
-  - svelte
-  - sveltekit
+  - BOTS
+  - AI / ML
 published: true
 ---
 

@@ -1,10 +1,9 @@
 <script lang="ts">
-    // @ts-nocheck
     // Please fix type issue
-	// import type { Project } from '$lib/types';
+	import type { Project } from '$lib/types';
     import { Heart } from "phosphor-svelte"
 
-    export let project;
+    export let project: Project;
 
     console.log("This is Project Card")
 

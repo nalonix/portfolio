@@ -5,6 +5,6 @@ export type Project = {
     slug: string
     description: string
     data: string
-    categories: string[]
+    tags: string[]
     published: boolean
 }

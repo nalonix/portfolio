@@ -4,9 +4,9 @@ title: Fourth Project
 description: Fourth post description
 data: '2023-05-08'
 tags:
-  - JavaScript
+  - JS
   - CSS
-  - Fantasy
+  - BACKEND
 published: true
 ---
 
