@@ -3,25 +3,11 @@
 @tailwind utilities;
 
 .primary-button {
-	display: block;
-	width: 100%;
-	text-align: center;
-	background: black;
-	color: white;
-	border-radius: 9999px;
-	text-decoration: none;
-	padding: 0.5rem 2rem;
+	@apply inline-flex items-center justify-center w-full text-center bg-black text-white rounded-full no-underline px-8 py-2 whitespace-nowrap;
 }
 
 .seconary-button {
-	display: block;
-	text-align: center;
-	background: white;
-	color: black;
-	border-radius: 9999px;
-	border: solid black 1px;
-	text-decoration: none;
-	padding: 0.5rem 2rem;
+	@apply block text-center bg-white text-black rounded-full border border-black no-underline px-8 py-2 whitespace-nowrap;
 }
 
 .card {

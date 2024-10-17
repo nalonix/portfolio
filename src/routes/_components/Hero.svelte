@@ -1,4 +1,5 @@
 <script lang="ts">
+    import File from "phosphor-svelte/lib/File"
 
 </script>
 
@@ -13,6 +14,9 @@
         <p class="text-center max-w-2xl xl:max-w-3xl">pouring heart and soul into crafting software solutions, reveling in the art of methodical engineering to build exceptional software</p>
     </div>
     <div>
+        <a href="/docs/resume.pdf" class="primary-button gap-1 uppercase text-sm">
+            Resume <File size={18} />
+        </a>
 
     </div>
 </section>
