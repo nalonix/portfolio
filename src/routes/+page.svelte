@@ -2,7 +2,8 @@
     // 
     import * as config from '$lib/config'
     // 
-	import HeroSection from './_components/HeroSection.svelte';
+	import Hero from './_components/Hero.svelte';
+	import Footer from './_components/Footer.svelte';
     import ProjectsSection from "./_components/ProjectsSection.svelte";
     
     export let data;
@@ -15,6 +16,7 @@
 </svelte:head>
 
 <section>
-    <HeroSection />
+    <Hero />
     <ProjectsSection projects={data.projects} />
+    <Footer />
 </section>

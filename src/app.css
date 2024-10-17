@@ -2,16 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-img {
-	width: 100%;
-	max-width: 450px;
-}
-
 .primary-button {
 	display: block;
+	width: 100%;
 	text-align: center;
-	width: 5rem;
-	border: solid black 3px;
+	background: black;
+	color: white;
+	border-radius: 9999px;
 	text-decoration: none;
-	padding: 5px 10px;
+	padding: 0.5rem 2rem;
+}
+
+.seconary-button {
+	display: block;
+	text-align: center;
+	background: white;
+	color: black;
+	border-radius: 9999px;
+	border: solid black 1px;
+	text-decoration: none;
+	padding: 0.5rem 2rem;
+}
+
+.card {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	transition: all 0.3s ease-in-out;
+	@apply rounded-3xl;
+}
+
+.tag {
+	@apply py-[1px] px-2 text-nowrap bg-gray-200 border-gray-300 rounded-full uppercase text-[10px] border;
+}
+.tag.active {
+	@apply bg-zinc-800 border-zinc-900 text-white;
 }

@@ -1,4 +1,5 @@
 ---
+banner: '/media/images/banner.png'
 title: Third Project
 description: Third post descripttion
 data: '2023-05-07'

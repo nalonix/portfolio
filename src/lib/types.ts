@@ -1,5 +1,6 @@
 
 export type Project = {
+    banner: string
     title: string
     slug: string
     description: string

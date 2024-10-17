@@ -16,7 +16,7 @@
     <div>
         <h1>{data.meta.title} </h1>
     </div>
-    {JSON.stringify(data)}
+    <!-- {JSON.stringify(data)} -->
     <div class="prose">
         <svelte:component this={data.content}></svelte:component>
 
