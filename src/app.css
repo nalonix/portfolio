@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 .primary-button {
-	@apply inline-flex items-center justify-center w-full text-center bg-black text-white rounded-full no-underline px-8 py-2 whitespace-nowrap;
+	@apply inline-flex items-center justify-center w-full text-center bg-black border border-black text-white rounded-full no-underline px-8 py-2 whitespace-nowrap transition-all duration-200;
+}
+.primary-button:hover {
+	@apply invert border border-zinc-600;
 }
 
 .seconary-button {

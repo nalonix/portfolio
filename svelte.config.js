@@ -11,7 +11,7 @@ extensions: ['.md']
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	extensions: [".svelte", ".md"],
-	preprocess: [vitePreprocess(),mdsvex(mdsvexOptions)],
+	preprocess: [ vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
 		adapter: adapter()
 	}

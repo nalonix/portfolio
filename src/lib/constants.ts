@@ -11,5 +11,5 @@ export const SOCIALS = [
     { name: "LinkedIn", href: "https://www.linkedin.com/in/naolfekadu/", icon: LinkedinLogo },
     { name: "Twitter", href: "https://twitter.com/naolfekadu", icon: XLogo },
     { name: "Stackoverflow", href: "https://stackoverflow.com/users/13652650/naol-fekadu", icon: StackOverflowLogo },
-    { name: "Gmail", href:"mailto:naolfekadu@gmail.com", icon: EnvelopeSimple },
+    { name: "Gmail", href:"mailto:nf.naol9@gmail.com", icon: EnvelopeSimple },
 ]
