@@ -1,6 +1,5 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import { fade, scale } from "svelte/transition";
     import ProjectCard from "./ProjectCard.svelte";
     import type { Project } from "$lib/types";
 
@@ -46,9 +45,7 @@
     
     <div class="min-h-[600px] grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-2 pb-20 pt-8">
         {#each filteredProjects as project (project.slug)}
-            <div transition:fade|scale={{ duration: 300 }}>
-                <ProjectCard {project} />
-            </div>
+                <ProjectCard {project} /> 
         {/each}
     </div>
 </section>

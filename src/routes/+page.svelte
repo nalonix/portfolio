@@ -17,8 +17,6 @@
 </svelte:head>
 
 <section>
-    <Header />
     <Hero />
     <ProjectsSection projects={data.projects} />
-    <Footer />
 </section>
