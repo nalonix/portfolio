@@ -28,7 +28,7 @@
             <span class="block absolute bottom-2 left-4 px-2 rounded-full text-xs bg-white">{project.date}</span>
         </div>
         <div class="px-3.5 py-2">
-            <h3 class="font-bold capitalize">{project.title}</h3>
+            <h3 class="font-bold capitalize my-1">{project.title}</h3>
             <p>{project.description}</p>
             <div class="my-2 flex gap-2">
                 {#each project.tags as tag}
