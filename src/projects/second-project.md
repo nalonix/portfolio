@@ -28,6 +28,12 @@ Hey second one 👋
     console.log("Project iamges from .md file: ",projectImages)
 </script>
 
+## Gallery
+
+here are some nice looking screenshoots from the **projects**
 <Gallery slug={'second-project'} />
 
+## Video
+
+this video is a demonstration of the features and working flow of the second project.
 <VideoPlayer src={'https://youtu.be/TljF3iwWyJA'} title={'Second Project Video'} thumbnails={projectImages[0]} />
