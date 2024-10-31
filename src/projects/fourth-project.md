@@ -1,5 +1,5 @@
 ---
-banner: '/media/images/banner.png'
+banner: '/second-project/media/images/banner.jpg'
 title: Fourth Project
 description: Fourth post description
 date: '2023-05-08'

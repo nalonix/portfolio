@@ -1,5 +1,9 @@
 <script lang="ts">
-    export let data;
+    interface Props {
+        data: any;
+    }
+
+    let { data }: Props = $props();
 </script>
 
 <svelte:head>
@@ -15,10 +19,10 @@
         <div class="relative">
             <img src={data.meta.banner} alt="" class="w-full h-auto object-cover">
             <!-- Gradient overlay -->
-            <div class="absolute inset-0 bg-gradient-to-b from-white/30 via-white/90 to-white"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-white/40 via-white/95 to-white"></div>
         </div>
     </div>
-    <div class="px-4 sm:-translate-y-36 -translate-y-20 min-h-[50vh]">
+    <div class="px-4 -translate-y-32 sm:-translate-y-56 md:-translate-y-96  min-h-[50vh]">
         <div class="mb-8">
             <p class="font-extralight text-sm">{data.meta.date}</p>
             <h1 class="font-semibold mt-1 mb-2">{data.meta.title}</h1>
@@ -29,7 +33,7 @@
             </div>
         </div>
         <div class="prose">
-            <svelte:component this={data.content}></svelte:component>
+            <data.content finite="play me"></data.content>
         </div>
     </div>
 </section>

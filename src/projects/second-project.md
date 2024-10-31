@@ -1,5 +1,5 @@
 ---
-banner: '/media/images/banner.png'
+banner: '/second-project/media/images/banner.jpg'
 title: Second Project
 description: Second post descripttion
 date: '2023-04-27'
@@ -16,9 +16,18 @@ published: true
 Hey second one 👋
 
 <script>
+  import Gallery from '../lib/components/Gallery.svelte'
+  import VideoPlayer from '../lib/components/VideoPlayer.svelte'
+  export let finite;
     const projectImages = [
         "/media/images/banner.png"
     ]
 
-    console.log(projectImages)
+    console.log(finite)
+
+    console.log("Project iamges from .md file: ",projectImages)
 </script>
+
+<Gallery slug={'second-project'} />
+
+<VideoPlayer src={'https://youtu.be/TljF3iwWyJA'} title={'Second Project Video'} thumbnails={projectImages[0]} />

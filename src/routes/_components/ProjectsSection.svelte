@@ -1,17 +1,23 @@
 <script lang="ts">
+    import { run } from 'svelte/legacy';
+
     import { onMount } from "svelte";
     import ProjectCard from "./ProjectCard.svelte";
     import type { Project } from "$lib/types";
 
-    export let projects: Project[];
+    interface Props {
+        projects: Project[];
+    }
+
+    let { projects }: Props = $props();
 
     const FILTER_TAGS = [
         "ALL", "SVELTEKIT", "CSS", "WEB", "TELEGRAM", "OPEN SOURCE", 
         "BACKEND", "SCRIPTS", "BOTS", "DESKTOP", "AI / ML"
     ];
 
-    let filteredProjects: Project[] = [];
-    let selectedFilter = "ALL";
+    let filteredProjects: Project[] = $state([]);
+    let selectedFilter = $state("ALL");
 
     // Initialize filtered projects on mount
     onMount(() => {
@@ -19,11 +25,11 @@
     });
 
     // filtering projects based on selected tag
-    $:{ 
+    run(() => { 
         filteredProjects = selectedFilter === "ALL"
         ? projects
         : projects.filter(project => project.tags.includes(selectedFilter));
-    }
+    });
 </script>
 
 <section class="max-w-7xl mx-auto">
@@ -36,7 +42,7 @@
         {#each FILTER_TAGS as tag (tag)}
             <button 
                 class={`tag ${selectedFilter === tag ? 'active' : ''}`}
-                on:click={() => selectedFilter = tag}
+                onclick={() => selectedFilter = tag}
             >
                 {tag}
             </button>
