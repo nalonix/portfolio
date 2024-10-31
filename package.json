@@ -35,6 +35,7 @@
 		"clsx": "^2.1.1",
 		"date-fns": "^4.1.0",
 		"tailwind-merge": "^2.5.4",
-		"tailwind-variants": "^0.2.1"
+		"tailwind-variants": "^0.2.1",
+		"vidstack": "^1.12.12"
 	}
 }

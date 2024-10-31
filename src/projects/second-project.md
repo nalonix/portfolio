@@ -17,6 +17,7 @@ Hey second one 👋
 
 <script>
   import Gallery from '../lib/components/Gallery.svelte'
+  import VideoPlayer from '../lib/components/VideoPlayer.svelte'
   export let finite;
     const projectImages = [
         "/media/images/banner.png"
@@ -28,3 +29,5 @@ Hey second one 👋
 </script>
 
 <Gallery slug={'second-project'} />
+
+<VideoPlayer src={'/media/videos/video.mp4'} />
