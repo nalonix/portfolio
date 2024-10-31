@@ -1,5 +1,9 @@
 <script lang="ts">
-    export let data;
+    interface Props {
+        data: any;
+    }
+
+    let { data }: Props = $props();
 </script>
 
 <svelte:head>
@@ -29,7 +33,7 @@
             </div>
         </div>
         <div class="prose">
-            <svelte:component this={data.content} finite="play me"></svelte:component>
+            <data.content finite="play me"></data.content>
         </div>
     </div>
 </section>

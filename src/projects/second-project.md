@@ -30,4 +30,4 @@ Hey second one 👋
 
 <Gallery slug={'second-project'} />
 
-<VideoPlayer src={'/media/videos/video.mp4'} />
+<VideoPlayer src={'https://youtu.be/TljF3iwWyJA'} title={'Second Project Video'} thumbnails={projectImages[0]} />

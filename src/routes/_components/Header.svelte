@@ -8,7 +8,7 @@
     <div class="flex gap-2">
         {#each SOCIALS as social}
             <a href={social.href} target="_blank" class="hover:bg-zinc-200 rounded-full p-1.5 gap-1 uppercase text-sm">
-                <svelte:component this={social.icon} size={24} weight="light" />
+                <social.icon size={24} weight="light" />
             </a>
         {/each}
     </div>

@@ -7,7 +7,11 @@
 	import Footer from './_components/Footer.svelte';
     import ProjectsSection from "./_components/ProjectsSection.svelte";
     
-    export let data;
+    interface Props {
+        data: any;
+    }
+
+    let { data }: Props = $props();
 </script>
 
 

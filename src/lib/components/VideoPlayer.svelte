@@ -3,14 +3,19 @@
 <script lang="ts">
     import 'vidstack/bundle';
 
-    export let src: string;
+    interface Props {
+        src: string;
+        title: string;
+        thumbnails: string;
+    }
+
+    let { title, src, thumbnails }: Props = $props();
 
 
 </script>
 
 
-
-<media-player title="Sprite Fight" src="youtube/_cMxraX_5RE" playsInline>
+<media-player title={title} src={src} playsInline>
     <media-provider></media-provider>
-    <media-plyr-layout thumbnails="https://files.vidstack.io/sprite-fight/thumbnails.vtt"></media-plyr-layout>
+    <media-plyr-layout thumbnails={thumbnails}></media-plyr-layout>
 </media-player>

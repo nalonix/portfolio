@@ -6,8 +6,12 @@
 
 	import Info  from "phosphor-svelte/lib/Info";
 
-	export let slug: string;
-	export let caption: string;
+	interface Props {
+		slug: string;
+		caption: string;
+	}
+
+	let { slug, caption }: Props = $props();
 
 	let images: any[] = [];
 	let galleryImg: HTMLDivElement;
