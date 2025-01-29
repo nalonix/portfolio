@@ -27,7 +27,9 @@
 	</button>
 	<a href={`/projects/${project.slug}`}>
 		<div class="relative">
-			<img src={project.banner} alt="" class="rounded-3xl" />
+			<div class="w-full h-full">
+				<img src={project.banner} alt="" class="rounded-3xl" />
+			</div>
 			<span class="block absolute bottom-2 left-4 px-2 rounded-full text-xs bg-white"
 				>{project.date}</span
 			>
