@@ -29,7 +29,7 @@
 .card {
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	transition: all 0.3s ease-in-out;
-	@apply rounded-3xl h-fit;
+	@apply rounded-3xl h-fit w-[95%] lg:w-[98%] overflow-hidden;
 }
 
 .tag {
@@ -65,4 +65,8 @@ h4,
 h5,
 h6 {
 	@apply mb-1.5 mt-5;
+}
+
+link_underline:hover {
+	@apply underline;
 }
