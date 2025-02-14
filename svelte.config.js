@@ -3,7 +3,7 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from "mdsvex";
 import rehypeSlug from 'rehype-slug';
 
-import extractHeadings from './src/lib/plugins/extractHeadings.js';
+import extractHeadings from './src/lib/plugins/extractHeadings.ts';
 
 
 
