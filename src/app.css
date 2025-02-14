@@ -33,7 +33,7 @@
 }
 
 .tag {
-	@apply py-[1px] px-2 text-nowrap bg-gray-200 border-gray-300 rounded-full uppercase text-[10px] border;
+	@apply py-[1px] px-2 text-nowrap bg-gray-200 border-gray-300 rounded-full uppercase text-[10px] border select-none;
 }
 .tag.active {
 	@apply bg-zinc-800 border-zinc-900 text-white;
@@ -65,6 +65,30 @@ h4,
 h5,
 h6 {
 	@apply mb-1.5 mt-5;
+}
+
+p {
+	@apply pt-3 pb-1;
+}
+p,
+li {
+	@apply text-sm;
+}
+
+ol {
+	@apply list-decimal pl-2 sm:pl-4 pt-2;
+}
+
+ul {
+	@apply list-disc pl-2 sm:pl-4;
+}
+
+li {
+	@apply list-inside py-[1.5px];
+}
+
+strong {
+	@apply font-semibold;
 }
 
 link_underline:hover {

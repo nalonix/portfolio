@@ -3,7 +3,7 @@
 	export let href: string;
 </script>
 
-<a {href} class="link_underline">{name}</a>
+<a target="_blank" {href} class="link_underline">{name}</a>
 
 <style lang="postcss">
 	.link_underline {

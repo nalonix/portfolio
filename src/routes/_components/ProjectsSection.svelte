@@ -43,7 +43,7 @@
 	});
 </script>
 
-<section class="max-w-7xl mx-auto">
+<section class="max-w-7xl mx-auto select-none">
 	<div class="flex flex-col items-center gap-2 py-5">
 		<h1 class="text-4xl text-center">Projects</h1>
 		<p class="font-light">Here are some of my projects</p>

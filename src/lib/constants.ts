@@ -8,7 +8,7 @@ import EnvelopeSimple from 'phosphor-svelte/lib/EnvelopeSimple';
 export const SOCIALS = [
 	{ name: 'Telegram', href: 'https://t.me/nalonix', icon: TelegramLogo },
 	{ name: 'Github', href: 'https://github.com/nalonix', icon: GithubLogo },
-	{ name: 'LinkedIn', href: 'https://www.linkedin.com/in/naolfekadu/', icon: LinkedinLogo },
+	{ name: 'LinkedIn', href: 'https://www.linkedin.com/in/nalonix/', icon: LinkedinLogo },
 	{ name: 'Twitter', href: 'https://twitter.com/nalonix', icon: XLogo },
 	{
 		name: 'Stackoverflow',
