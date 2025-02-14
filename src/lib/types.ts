@@ -8,3 +8,28 @@ export type Project = {
 	published: boolean;
 	order: number;
 };
+
+// Define types
+export type MarkdownNode = {
+	type: string;
+	value?: string;
+	children?: MarkdownNode[];
+	depth?: number; // Specific to heading nodes
+};
+
+export type Heading = {
+	text: string;
+	level: number;
+	slug: string;
+};
+
+export type FileData = {
+	headings: Heading[];
+	fm?: {
+		headings: Heading[];
+	};
+};
+
+export type File = {
+	data: FileData;
+};

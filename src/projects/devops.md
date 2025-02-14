@@ -4,25 +4,58 @@ title: DevOps
 description: Overview of the DevOps stuff I've done
 date: '2025-01-28'
 tags:
-  - CADDY
-  - GITHUB
   - DOCKER
-  - NGINX
-  - OPEN SOURCE
+  - CADDY
+  - PM2
+  - CLOUDFLARE
+  - CHECKMK
 published: true
 order: 3
 ---
 
-## DevOps 🐋
+<script>
+
+  import Tags from '../lib/components/Tags.svelte'
+</script>
+
+## Development and Operations 🐋
 
 <hr />
 
 ### **Web Server Configuration**
 
-<span class="tag">Docker</span> <span class="tag">NGNIX</span>
+<Tags tags={[
+"Docker", "CADDY", "PM2", "Cloudflare", "CheckMK"
+]} />
 
-I configured and managed server infrastructure, including authentication, security, port hardening, and performance optimization. Set up Cloudflare DNS with CAPTCHA for enhanced security, configured email forwarding, and deployed web servers with reverse proxies. Dockerized applications for scalability and used process management tools for efficiency. Implemented monitoring with Checkmk for real-time insights. Established CI/CD pipelines to deploy development and main branches separately, automating subdomain creation for new branches and updating production on merges to main. This experience, reinforced by a networking course, streamlined my approach to server management and deployment workflows.
+**DNS & Web Server Management**
 
-My skill is still highlevel but I have a good grasp of the concepts and tools involed.
+- Configure DNS records (A, CNAME, TXT, MX) and domain resolution (Cloudflare)
+- Manage subdomains, redirects, and email routing with MX records
+- Set up and configure web servers (Caddy) for static & dynamic sites
+- Implement reverse proxies for backend services (Node.js APIs)
+- Manage SSL/TLS (Let’s Encrypt), caching, and compression (gzip)
+- Configure URL rewrites, redirects, error pages, and client-side routing for SPAs
 
-<hr />
+**Application Hosting & Deployment**
+
+- Host and manage Node.js applications with PM2 & systemd
+- Deploy applications using Git (`scp`, `rsync` for file transfers)
+- Configure environment variables and run applications in production mode
+- Automate system updates, security patches, and scheduled tasks (cron jobs)
+
+**Containerization & Security**
+
+- Deploy and manage applications with Docker & Docker Compose
+- Set up reverse proxies for containerized services and manage networking
+- Secure servers: SSH key authentication, firewalls, and least privilege access
+- Restrict root login, disable password-based SSH, and monitor threats
+
+**Monitoring & Optimization**
+
+- Centralized logging, log rotation, and request rate limiting
+- Monitor server performance using `htop`, `top`, `netstat`, and PM2 logs
+
+<br />
+
+---

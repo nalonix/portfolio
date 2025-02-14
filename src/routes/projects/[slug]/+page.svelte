@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Tags from '$lib/components/Tags.svelte';
+	import TableOfContents from '$lib/components/TableOfContents.svelte';
 
 	interface Props {
 		data: any;
@@ -35,6 +36,7 @@
 				<Tags tags={data.meta.tags} />
 			</div>
 		</div>
+		<TableOfContents headings={data.headings} />
 		<div class="prose">
 			<data.content finite="play me"></data.content>
 		</div>

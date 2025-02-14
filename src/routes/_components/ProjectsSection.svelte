@@ -16,13 +16,16 @@
 		'SVELTEKIT',
 		'CSS',
 		'WEB',
-		'TELEGRAM',
+		// 'TELEGRAM',
 		'OPEN SOURCE',
-		'BACKEND',
-		'SCRIPTS',
-		'BOTS',
-		'DESKTOP',
-		'AI / ML'
+		'DOCKER'
+		// 'DEVOPS'
+
+		// 'BACKEND',
+		// 'SCRIPTS',
+		// 'BOTS',
+		// 'DESKTOP',
+		// 'AI / ML'
 	];
 
 	let filteredProjects: Project[] = $state([]);
@@ -32,15 +35,23 @@
 	onMount(() => {
 		// @ts-ignore
 		filteredProjects = projects;
+
+		// console.log(projects);
 	});
 
 	// filtering projects based on selected tag
-	run(() => {
+	$effect(() => {
 		filteredProjects =
 			selectedFilter === 'ALL'
 				? projects
 				: projects.filter((project) => project.tags.includes(selectedFilter));
 	});
+	// (() => {
+	// 	filteredProjects =
+	// 		selectedFilter === 'ALL'
+	// 			? projects
+	// 			: projects.filter((project) => project.tags.includes(selectedFilter));
+	// });
 </script>
 
 <section class="max-w-7xl mx-auto select-none">

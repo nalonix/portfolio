@@ -11,8 +11,6 @@
 
 	let { project }: Props = $props();
 
-	console.log('This is Project Card');
-
 	function handleLike() {
 		console.log('Like Project', project?.slug);
 	}

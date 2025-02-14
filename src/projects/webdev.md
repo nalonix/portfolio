@@ -18,12 +18,9 @@ order: 1
   import VideoPlayer from '../lib/components/VideoPlayer.svelte'
   import Link from '../lib/components/Link.svelte'
   import Tags from '../lib/components/Tags.svelte'
-
 </script>
 
 ## Web Apps ❤️
-
-Below are some web apps built with various tech stacks.
 
 <hr />
 
@@ -144,8 +141,6 @@ The **Chereta Auction Platform** is a robust and user-friendly platform for mana
 7. **Responsive Design**: Used **Tailwind CSS** and **DaisyUI** for a clean, responsive, and visually appealing interface.
 8. **Deployment**: Successfully deployed on a **barebones VPS**, showcasing adaptability to client infrastructure needs.
 
-<hr />
-
 #### Challenges and Solutions
 
 **Excel-Based Registration**
@@ -184,9 +179,10 @@ This was a passion project I built a while ago. It was meant to be a practice qu
 
 <Link name="Live Site" href="https://praxibox-playground.vercel.app/" />
 
-## Static Sites
+<br />
+<br />
 
-Below are some static sites I built with vanilla JS, HTML, and CSS.
+## Static Sites
 
 <hr />
 

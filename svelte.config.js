@@ -1,11 +1,20 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from "mdsvex";
+import rehypeSlug from 'rehype-slug';
+
+import extractHeadings from './src/lib/plugins/extractHeadings.js';
+
 
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
-extensions: ['.md']
+	extensions: ['.md'],
+	smartypants: {
+		dashes: 'oldschool'
+	},
+	rehypePlugins: [rehypeSlug],
+    remarkPlugins: [extractHeadings],
 }
 
 /** @type {import('@sveltejs/kit').Config} */

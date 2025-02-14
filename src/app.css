@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
 .primary-button {
 	@apply inline-flex items-center justify-center w-full text-center bg-black border border-black text-white rounded-full no-underline px-8 py-2 whitespace-nowrap transition-all duration-200;
 }
@@ -27,7 +31,9 @@
 }
 
 .card {
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	box-shadow:
+		rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+		rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 	transition: all 0.3s ease-in-out;
 	@apply rounded-3xl h-fit w-[95%] lg:w-[98%] overflow-hidden;
 }
@@ -64,11 +70,11 @@ h3,
 h4,
 h5,
 h6 {
-	@apply mb-1.5 mt-5;
+	@apply pb-1 mt-5;
 }
 
 p {
-	@apply pt-3 pb-1;
+	@apply pt-1 pb-1;
 }
 p,
 li {
@@ -87,6 +93,9 @@ li {
 	@apply list-inside py-[1.5px];
 }
 
+code {
+	@apply text-red-600;
+}
 strong {
 	@apply font-semibold;
 }
