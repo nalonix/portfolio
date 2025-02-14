@@ -18,7 +18,8 @@
 	<div>
 		<!-- <p class="text-center max-w-2xl xl:max-w-3xl">pouring heart and soul into crafting software solutions, reveling in the art of methodical engineering to build exceptional software</p> -->
 		<p class="text-center max-w-2xl xl:max-w-3xl">
-			In love with and intrigued by the universe of softwares. In love with excellent craftsmanship.
+			In love with and intrigued by the universe of softwares.
+			<!-- In love with excellent craftsmanship. -->
 		</p>
 	</div>
 	<div>
