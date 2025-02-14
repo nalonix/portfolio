@@ -3,7 +3,42 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from "mdsvex";
 import rehypeSlug from 'rehype-slug';
 
-import extractHeadings from './src/lib/plugins/extractHeadings.ts';
+
+import { visit } from 'unist-util-visit';
+
+// Function to extract text from a Markdown node
+function extractText(node) {
+	if (node.type === 'text') {
+		return node.value || ''; // Handle undefined value
+	} else if (node.children) {
+		return node.children.map(extractText).join(''); // Recursively extract text
+	}
+	return '';
+}
+
+// Function to extract headings from a Markdown AST
+function extractHeadings() {
+	return (tree, file) => {
+		file.data.headings = [];
+
+		visit(tree, 'heading', (node) => {
+			const text = extractText(node).trim(); // Extract full heading text
+			const slug = text.toLowerCase().replace(/\s+/g, '-');
+
+			file.data.headings.push({
+				text,
+				level: node.depth || 1, // Default to level 1 if depth is undefined
+				slug
+			});
+		});
+
+		// Add headings to the frontmatter (fm) object
+		if (!file.data.fm) {
+			file.data.fm = { headings: [] };
+		}
+		file.data.fm.headings = file.data.headings;
+	};
+}
 
 
 
@@ -14,7 +49,7 @@ const mdsvexOptions = {
 		dashes: 'oldschool'
 	},
 	rehypePlugins: [rehypeSlug],
-    remarkPlugins: [extractHeadings],
+    remarkPlugins: [ extractHeadings ]
 }
 
 /** @type {import('@sveltejs/kit').Config} */

@@ -12,7 +12,7 @@ function extractText(node: MarkdownNode): string {
 }
 
 // Function to extract headings from a Markdown AST
-function extractHeadings() {
+export default function extractHeadings() {
 	return (tree: MarkdownNode, file: File) => {
 		file.data.headings = [];
 
