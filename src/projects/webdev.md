@@ -211,3 +211,16 @@ Vanilla JS, HTML, and CSS build out of a Boston University brochure design.
 <Link name="GitHub" href="https://github.com/nalonix/bu" />
 
 <hr />
+
+### **Sushi Restaurant Website**
+
+<Tags tags={[
+"HTML", "CSS", "JS"
+]} />
+
+Sushi restaurant website built with HTML, CSS, and JS.
+
+<Link name="Live Site" href="https://sushi-mane.vercel.app/" /> | 
+<Link name="GitHub" href="https://github.com/nalonix/SushiMane" />
+
+<hr />
