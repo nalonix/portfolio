@@ -188,9 +188,7 @@ This was a passion project I built a while ago. It was meant to be a practice qu
 
 ### **Topk Portfolio Template**
 
-<Tags tags={[
-"HTML", "CSS", "JS"
-]} />
+<Tags tags={["HTML", "CSS", "JS"]} />
 
 This was my build out of a twitter trending ui design of a portfolio template. It has a minimalist design and is responsive. I used some neat tricks to make the interactions work with out any javascript.
 
@@ -214,7 +212,7 @@ Vanilla JS, HTML, and CSS build out of a Boston University brochure design.
 
 ### **Sushi Restaurant Website**
 
-<Tags tags={[0
+<Tags tags={[
 "HTML", "CSS", "JS"
 ]} />
 
