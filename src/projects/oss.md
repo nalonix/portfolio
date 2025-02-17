@@ -27,10 +27,10 @@ Below are some of the open source projects I've contributed to.
 
 <span class="tag">Angular</span> <span class="tag">Firebase</span> <span class="tag">TypeScript</span>
 
-API Hub is an all-in-one API destination. It is a wrapper around major and popular APIs to have a uniform way of accessing all of them.
+Adding a feature I needed to an open source movie streaming site I love using.
 
 <Link name="Live Site" href="https://apihub-seven.vercel.app/" /> | <Link name="GitHub" href="https://github.com/dagmawibabi/APIHub" />
-
+u
 <hr />
 
 ### **APIHub**

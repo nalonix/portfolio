@@ -214,7 +214,7 @@ Vanilla JS, HTML, and CSS build out of a Boston University brochure design.
 
 ### **Sushi Restaurant Website**
 
-<Tags tags={[
+<Tags tags={[0
 "HTML", "CSS", "JS"
 ]} />
 
