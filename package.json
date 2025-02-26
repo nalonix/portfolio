@@ -29,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@loglib/tracker": "^0.8.0",
 		"@types/unist": "^3.0.3",
 		"bigger-picture": "^1.1.17",
 		"class-variance-authority": "^0.7.0",
