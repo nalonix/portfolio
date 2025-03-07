@@ -33,11 +33,9 @@ order: 1
 
 #### Overview
 
-A **Ticketing System Mini Project** for a job application made in a single day.
+The **Role-Based Ticketing System** is a simple platform where users can create support tickets and admins can manage them. It was built to demonstrate role-based access control, with users submitting tickets and admins updating their statuses. This project showcases secure authentication, efficient state management, and a clean user interface.
 
----
-
-## Key Features
+#### Key Features
 
 - **JWT Authentication**: Secure login/signup with role-based access (`admin` and `user`).
 - **Ticket Management**:
