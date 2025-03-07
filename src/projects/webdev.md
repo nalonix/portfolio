@@ -35,6 +35,20 @@ order: 1
 
 A **Ticketing System Mini Project** for a job application made in a single day.
 
+---
+
+## Key Features
+
+- **JWT Authentication**: Secure login/signup with role-based access (`admin` and `user`).
+- **Ticket Management**:
+  - Users: Create and view their tickets.
+  - Admins: View all tickets, update statuses, and delete tickets.
+- **Protected Routes**: Role-based access to dashboards.
+- **Real-Time Updates**: Automatic refresh after ticket changes.
+- **Responsive UI**: Built with TailwindCSS.
+
+---
+
 #### Demo Video
 
 <VideoPlayer src={'https://youtu.be/zd3oEidEp8o?si=32kVVts3i_KwZAb7'} title={'Mini Ticketing Project Video'} />
