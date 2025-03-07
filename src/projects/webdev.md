@@ -24,6 +24,26 @@ order: 1
 
 <hr />
 
+### **Ticketing Mini Project**
+
+<Tags tags={[
+"React", "Tailwind CSS", "NodeJS", "MongoDB", "Express",
+"MERN", "TypeScript", "Vite"
+]} />
+
+#### Overview
+
+A **Ticketing System Mini Project** for a job application made in a single day.
+
+#### Demo Video
+
+<VideoPlayer src={'https://youtu.be/zd3oEidEp8o?si=32kVVts3i_KwZAb7'} title={'Mini Ticketing Project Video'} />
+
+<Link name="Github Frontend" href="https://github.com/nalonix/ticketing-system-frontend" /> |
+<Link name="Github Backend" href="https://github.com/nalonix/ticketing-miniproject-backend" />
+
+<hr />
+
 ### **Grade Report**
 
 <Tags tags={[
