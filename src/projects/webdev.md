@@ -24,7 +24,7 @@ order: 1
 
 <hr />
 
-### **Ticketing Mini Project**
+### **MERN Ticketing Mini Project**
 
 <Tags tags={[
 "React", "Tailwind CSS", "NodeJS", "MongoDB", "Express",
@@ -195,9 +195,9 @@ The **Chereta Auction Platform** is a robust and user-friendly platform for mana
 - **Challenge**: Deploying the application on a barebones VPS, which required manual setup and configuration.
 - **Solution**: Successfully deployed the platform, demonstrating adaptability to client infrastructure requirements.
 
-Although the original site is no longer live, a reference version is available on **Vercel** for review. This project highlights my ability to tackle unique challenges and deliver tailored solutions for traditional businesses.
+<!-- Although the original site is no longer live, a reference version is available on **Vercel** for review. This project highlights my ability to tackle unique challenges and deliver tailored solutions for traditional businesses. -->
 
-<Link name="Live Site" href="https://hule-chereta.vercel.app/" />
+<!-- <Link name="Live Site" href="https://hule-chereta.vercel.app/" /> -->
 
 <hr />
 
