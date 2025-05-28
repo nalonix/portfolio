@@ -53,6 +53,12 @@ An encrypted messaging web app. Worked on adding image support feature with Base
 
 <hr />
 
+### **Beniah**
+
+A christian community project.
+
+<hr />
+
 ### **Telegram Communities**
 
 <span class="tag">SvelteKit</span> <span class="tag">NodeJs</span> <span class="tag">Shadcn-Svelte</span>
