@@ -1,17 +1,23 @@
-// src/routes/api/gallery/[slug]/+server.js
+// src/routes/api/gallery/[slug]/+server.ts
 import { json } from '@sveltejs/kit';
-// @ts-ignore
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-export async function GET({ params }) {
-	const { slug } = params;
-	const galleryPath = path.join(process.cwd(), 'static', 'media', 'images', 'galleries', slug);
+interface Params {
+	slug: string;
+	project: string;
+}
+
+export async function GET({ params }: { params: Params }) {
+	const { slug, project } = params;
+	console.log(project, slug);
+	const galleryPath = path.join(process.cwd(), 'static', project, 'media', 'images', 'gallery', slug);
+	console.log(galleryPath);
 
 	try {
 		const files = await fs.readdir(galleryPath);
-		const imageFiles = files.filter((file: any) => /\.(jpg|png|gif|svg|webp)$/i.test(file));
-		const imageUrls = imageFiles.map((file: any) => `/media/images/galleries/${slug}/${file}`);
+		const imageFiles = files.filter((file) => /\.(jpg|png|gif|svg|webp)$/i.test(file));
+		const imageUrls = imageFiles.map((file) => `/media/images/gallery/${slug}/${file}`);
 
 		return json(imageUrls);
 	} catch (error) {

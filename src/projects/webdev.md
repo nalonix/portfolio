@@ -99,6 +99,9 @@ The **Link-in-Bio Portfolio Platform** is a versatile and user-friendly tool for
 
 <Link name="Live Site" href="https://spotlight-et.vercel.app/" />
 
+<Gallery project={'webdev'} slug={'spotlight'} />
+
+
 <hr />
 
 ### **Etuber LMS**
@@ -181,7 +184,7 @@ Although the original site is no longer live, a reference version is available o
 
 ## Gallery
 
-<Gallery slug={'hulechereta'} />
+<Gallery project={'webdev'} slug={'hulechereta'} />
 
 <!-- <Link name="Live Site" href="https://hule-chereta.vercel.app/" /> -->
 

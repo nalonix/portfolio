@@ -8,10 +8,11 @@
 
 	interface Props {
 		slug: string;
+		project: string;
 		caption: string;
 	}
 
-	let { slug, caption }: Props = $props();
+	let { slug, project, caption }: Props = $props();
 
 	let images: any[] = [];
 	let galleryImg: HTMLDivElement;
@@ -20,7 +21,8 @@
 		images = [];
 
 		try {
-			const res = await fetch(`/api/gallery/${slug}`);
+			const res = await fetch(`/api/gallery/${project}/${slug}`);
+
 			if (!res.ok) {
 				throw new Error(`Failed to fetch images: ${res.status}`);
 			}
