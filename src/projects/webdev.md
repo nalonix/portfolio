@@ -21,20 +21,13 @@ order: 1
 
 
   import Gallery from '../lib/components/Gallery.svelte'
-
-  export let finite;
-    const projectImages = [
-        "/media/images/banner.png"
-    ]
-
-    // console.log("This is finite: ",finite)
-
-    // console.log("Project iamges from .md file: ",projectImages)
 </script>
 
 ## Web Apps ❤️
 
 <hr />
+
+
 
 ### **Grade Report**
 
@@ -67,6 +60,41 @@ The **Grade Report System** is a secure, minimalist platform for managing and de
 <VideoPlayer src={'https://youtu.be/TljF3iwWyJA'} title={'Second Project Video'} />
 
 <Link name="Live Site" href="http://grade-report.vercel.app/" />
+
+<hr />
+
+### **Svelte Articles**
+
+<Tags tags={[
+  "SvelteKit", "Tailwind CSS", "TypeScript", "MDX", "Vidstack",
+  "Rehype Plugins", "Remark Plugins", "Bigger Picture", "Analytics"
+]} />
+
+#### Overview
+
+**Svelte Articles** is a modern article server built with **SvelteKit**, designed to host richly formatted articles with support for embedded media, code syntax highlighting, and responsive design. Ideal for personal blogs or documentation, it provides an elegant reading experience powered by **MDX**, **custom video embedding**, and **gallery systems**.
+
+#### Key Features
+
+The **Svelte Articles** project is a full-featured, developer-friendly publishing platform. Core functionalities include:
+
+1. **MDX-Based Articles**: Write articles using enhanced Markdown (MDX) with JSX components. Each article includes structured frontmatter metadata for easy configuration.
+2. **Syntax Highlighting**: Beautiful and performant code blocks with `rehype-pretty-code`, supporting GitHub-flavored Markdown via `remark-gfm`.
+3. **Dynamic Table of Contents**: Automatic TOC generation based on article headings for better navigation.
+4. **Tag Filtering & Ordering**: Filter articles by tags and control display order with frontmatter fields.
+5. **Media Gallery System**:
+   - Organize images and videos under each article.
+   - Gallery layout with lazy loading and `bigger-picture` lightbox support.
+   - Optimized for performance and responsiveness.
+6. **Custom Video Embedding**: Separate from main student records, ensuring data security and compliance.
+   - Embed local videos using `vidstack`.
+   - Embed external videos from **YouTube** and **Vimeo** using custom MDX components.
+7. **Responsive Design**: Mobile-friendly layout using **Tailwind CSS**
+8. **Analytics Integration**: Track views and engagement using `@loglib/tracker`.
+9. **Media Management**: Organized under the public directory, each article has its own directory for all related media assets. Supports serverelss environments with a manifest media manager. 
+
+<Link name="Live Site" href="http://svelte-articles.vercel.app/" /> | <Link name="GitHub" href="http://github.com/nalonix/svelte-articles" />
+
 
 <hr />
 
@@ -182,7 +210,6 @@ The **Chereta Auction Platform** is a robust and user-friendly platform for mana
 
 <!-- Add image gallery -->
 
-## Gallery
 
 <Gallery project={'webdev'} slug={'hulechereta'} />
 
