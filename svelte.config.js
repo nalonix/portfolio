@@ -2,6 +2,7 @@ import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from "mdsvex";
 import rehypeSlug from 'rehype-slug';
+import { slug } from 'github-slugger';
 
 
 import { visit } from 'unist-util-visit';
@@ -23,12 +24,11 @@ function extractHeadings() {
 
 		visit(tree, 'heading', (node) => {
 			const text = extractText(node).trim(); // Extract full heading text
-			const slug = text.toLowerCase().replace(/\s+/g, '-');
 
 			file.data.headings.push({
 				text,
 				level: node.depth || 1, // Default to level 1 if depth is undefined
-				slug
+				slug: slug(text) // Use the slug function to generate a unique slug
 			});
 		});
 

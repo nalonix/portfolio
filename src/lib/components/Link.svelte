@@ -7,6 +7,6 @@
 
 <style lang="postcss">
 	.link_underline {
-		@apply text-blue-500 hover:text-blue-700;
+		@apply text-blue-500 hover:text-blue-700 hover:underline;
 	}
 </style>

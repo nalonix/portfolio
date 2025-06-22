@@ -1,5 +1,6 @@
 import type { MarkdownNode, File } from './types';
 import { visit } from 'unist-util-visit';
+import { slug } from 'github-slugger';
 
 // Function to extract text from a Markdown node
 function extractText(node: MarkdownNode): string {
@@ -18,12 +19,11 @@ export default function extractHeadings() {
 
 		visit(tree, 'heading', (node: MarkdownNode) => {
 			const text = extractText(node).trim(); // Extract full heading text
-			const slug = text.toLowerCase().replace(/\s+/g, '-');
 
 			file.data.headings.push({
 				text,
 				level: node.depth || 1, // Default to level 1 if depth is undefined
-				slug
+				slug: slug(text), // Generate a slug from the heading text
 			});
 		});
 
