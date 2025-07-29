@@ -43,11 +43,11 @@ Summarize news from a given link.
 <Link name="GitHub" href="https://github.com/nalonix/NewsSummarizer" />
 
 
-## **Bots**
+<!-- ## **Bots**
 ### The Weeknd Quiz
 Guess the weeknd song from the 10 seconds intro.
 ### Poll Verdict 
-Social 
+Social  -->
 
 
 

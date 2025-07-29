@@ -63,6 +63,34 @@ The **Grade Report System** is a secure, minimalist platform for managing and de
 
 <hr />
 
+
+### **ShadCN Component Liabrary Starter**
+
+<Tags tags={[
+"Next.js", "Tailwind CSS", "ShadCN", "Dev Tool", "MDX", "TypeScript", "Vite"
+]} />
+
+#### Overview
+
+Shadcn/UI Component Library Starter is a robust and highly extensible starter template designed to streamline the creation of custom component libraries. Built with Next.js, React, and TypeScript, and styled using Tailwind CSS with Shadcn/UI, it provides a foundational boilerplate for developing consistent, accessible, and reusable UI components for any project.
+
+#### Key Features
+
+The **Shadcn/UI Component Library Starter** is a developer-friendly foundation for building your own scalable UI system. Core functionalities include:
+
+1. **Shadcn/UI Integration**: Pre-configured setup for quickly incorporating and extending components from Shadcn/UI.
+2. **Tailwind CSS Ready**: Seamless integration with Tailwind CSS for rapid and flexible styling.
+3. **Type-Safe Development**: Leverages TypeScript for enhanced code quality, maintainability, and developer experience.
+4. **Modular Component Structure**: Organized directory for creating, managing, and showcasing individual UI components.
+5. **Theming Support**: Built-in support for light and dark modes, easily customizable to match brand guidelines.
+6. **Optimized for Reusability**: Designed to be a scalable base, encouraging the creation of reusable components across multiple applications.
+7. **Next.js & React Foundation**: Utilizes the power of Next.js for a performant and efficient development environment, perfect for component development.
+
+<Link name="GitHub" href="https://github.com/nalonix/shadcn-component-lib-starter" />
+
+
+
+
 ### **Svelte Articles**
 
 <Tags tags={[
